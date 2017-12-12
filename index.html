@@ -1,0 +1,72 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Search</title>
+	<meta name="google-signin-client_id" content="621217557041-0i874313s9bi94jjh3dej8reva5ahdto.apps.googleusercontent.com">
+  </head>
+  <body background = "background.jpg"; no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover; > 
+  
+	<div id="my-signin2"></div>
+    <div id="buttons" style = "position: absolute;
+			top: 10%;
+			left: 40%;">
+		
+      <label> <input id="query" type="text"/><button id="search-button" disabled onclick="search()">Search</button></label>
+	  
+    </div>
+	
+	<div class="button container" >
+	<a href="#" id="prev" 
+			style = "position: absolute;
+			margin: auto;
+			top: 45%;
+			left: 5%;
+			background: url(rose-clip2.png);
+			background-repeat: no-repeat;
+			-webkit-transform: rotate(180deg);
+			-moz-transform: rotate(180deg);
+			-o-transform: rotate(180deg);
+			-ms-transform: rotate(180deg);
+			transform: rotate(180deg);
+			width: 256px;
+			height: 256px;
+			border: none;
+			overflow:auto;"</a>
+	<a href="#" id="next"
+				style = "position: absolute;
+			background: url(rose-clip2.png);
+			width: 256px;
+			height: 256px;
+			margin: auto;
+			top: 45%;
+			right: 5%;"> </a>
+    </div>
+		
+	<div class="g-signin2" data-onsuccess="onSignIn" 
+	style = "position: absolute;
+			left: 0;
+			top: 0
+			margin: auto;
+			overflow:auto;"></div>
+	<div class="your-centered-div">
+    
+	<div id="player"  
+	style = "position: absolute;
+			margin: auto;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%)
+			"></div>
+			
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+    <script src="auth.js"></script>
+    <script src="search.js"></script>
+    <script src="https://apis.google.com/js/client.js?onload=googleApiClientReady"></script>
+	<script src="https://apis.google.com/js/platform.js" async defer></script>
+	
+	
+  </body>
+</html>
